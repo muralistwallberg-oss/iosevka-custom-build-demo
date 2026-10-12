@@ -1,34 +1,46 @@
-# Put your custom build plans here
-
-[buildPlans.IosevkaCustomSample]
-family = "Iosevka Custom Sample"
+[buildPlans.IosevkaCustom]
+family = "Iosevka Custom"
 spacing = "normal"
 serifs = "sans"
 noCvSs = true
 exportGlyphNames = false
 
-[buildPlans.IosevkaCustomSample.weights.Regular]
+[buildPlans.IosevkaCustom.variants.design]
+two = "straight-neck-serifless"
+four = "closed-serifless"
+six = "straight-bar"
+eight = "two-circles"
+nine = "straight-bar"
+zero = "oval-unslashed"
+
+[buildPlans.IosevkaCustom.weights.Regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.IosevkaCustomSample.weights.Bold]
+[buildPlans.IosevkaCustom.weights.Bold]
 shape = 700
 menu = 700
 css = 700
 
-[buildPlans.IosevkaCustomSample.slopes.Upright]
+[buildPlans.IosevkaCustom.widths.Condensed]
+shape = 500
+menu = 3
+css = "condensed"
+
+[buildPlans.IosevkaCustom.widths.Normal]
+shape = 600
+menu = 5
+css = "normal"
+
+[buildPlans.IosevkaCustom.slopes.Upright]
 angle = 0
 shape = "upright"
 menu = "upright"
 css = "normal"
 
-[buildPlans.IosevkaCustomSample.slopes.Italic]
+[buildPlans.IosevkaCustom.slopes.Italic]
 angle = 9.4
 shape = "italic"
 menu = "italic"
 css = "italic"
-
-# To enable TTC building, uncomment the following section and write your collect plans
-# [collectPlans.IosevkaCustomSample]
-# from = ["IosevkaCustomSample"]
